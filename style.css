@@ -394,3 +394,180 @@ grid-template-columns: 1fr;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
+
+.about-section p {
+  max-width: 850px;
+  margin: 18px auto;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+}
+
+.about-grid .card {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+body.dark nav {
+  background: #3d1830 !important;
+  color: var(--text);
+}
+
+body.dark nav a,
+body.dark .logo {
+  color: var(--text);
+}
+
+body.dark .project-card {
+  background: var(--card);
+  color: var(--text);
+}
+
+/* ---------- HOME ---------- */
+
+.hero p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 18px auto;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.project-card p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.project-card h3 {
+  font-size: 2rem;
+}
+
+.project-card .tags {
+  font-size: 1rem;
+}
+
+
+/* ---------- MEDIA ---------- */
+
+.media-card p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.media-card h3 {
+  font-size: 2rem;
+}
+
+.media-card .tags {
+  font-size: 1rem;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-card p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.contact-card h1 {
+  font-size: 4rem;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.about-section h2 {
+  font-size: 2.4rem;
+}
+
+.about-grid .card {
+  font-size: 1.1rem;
+}
+
+.about-grid h3 {
+  font-size: 2rem;
+}
+
+.language-btn {
+  border: none;
+  background: #ffffff;
+  color: var(--text);
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-weight: 700;
+
+  font-size: 0.9rem;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.language-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(214, 51, 132, 0.25);
+
+  background: #ffe9f4;
+}
+
+body.dark .language-btn {
+  background: #5a2647;
+
+  color: white;
+}
+
+.theme-btn {
+  border: none;
+
+  width: 44px;
+
+  height: 44px;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+
+  color: white;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.08);
+
+  box-shadow: 0 8px 20px rgba(214, 51, 132, 0.35);
+}
+
+body.dark .theme-btn {
+  background: #6f3556;
+}
