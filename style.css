@@ -1,5 +1,5 @@
 :root {
-  --bg: #ffe6f2;
+  --bg: #ffe3f1;
   --card: #fff7fb;
   --text: #2b1020;
   --accent: #ff5fa8;
@@ -19,19 +19,19 @@ body {
 }
 
 nav {
-  background: var(--card);
+  background: #fff8fc;
   padding: 22px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 20px rgba(214, 51, 132, 0.15);
+  box-shadow: 0 4px 20px rgba(214, 51, 132, 0.12);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1.2rem;
 }
 
@@ -39,7 +39,7 @@ nav a {
   color: var(--text);
   text-decoration: none;
   margin-left: 24px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 nav a:hover {
@@ -47,11 +47,13 @@ nav a:hover {
 }
 
 main {
-  padding: 70px 10%;
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 70px 0;
 }
 
 .hero {
-  min-height: 75vh;
+  min-height: 85vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -69,8 +71,8 @@ main {
 }
 
 h1 {
-  font-size: 3.5rem;
-  margin: 0 0 15px;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  margin: 0 0 18px;
 }
 
 h2 {
@@ -85,31 +87,30 @@ h3 {
 
 .subtitle {
   color: var(--accent-dark);
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1.35;
 }
 
 .card {
   background: var(--card);
   border-radius: 28px;
   padding: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   box-shadow: 0 12px 35px rgba(214, 51, 132, 0.16);
 }
 
-.project-img {
-  width: 100%;
-  max-height: 360px;
-  object-fit: cover;
-  border-radius: 20px;
-  background: var(--soft);
-  margin-bottom: 20px;
+.card ul {
+  display: inline-block;
+  text-align: left;
+  margin: 10px auto 0;
+  padding-left: 22px;
 }
 
 .tags {
   color: var(--accent-dark);
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 0.9rem;
 }
@@ -118,59 +119,87 @@ h3 {
   display: inline-block;
   background: var(--accent);
   color: white;
-  padding: 13px 20px;
+  padding: 13px 22px;
   border-radius: 999px;
   text-decoration: none;
-  font-weight: bold;
-  margin: 10px 8px 0 0;
+  font-weight: 800;
+  margin: 14px 8px 0 0;
 }
 
 .button:hover {
   background: var(--accent-dark);
 }
 
-footer {
-  text-align: center;
-  padding: 35px;
-  background: var(--card);
+.buttons {
+  margin-top: 28px;
 }
 
-@media (max-width: 750px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 30px auto;
+}
 
-  nav a {
-    margin: 0 8px;
-  }
-
-  main {
-    padding: 45px 6%;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  .profile-img {
-    width: 170px;
-    height: 170px;
-  }
+.highlights span {
+  background: #fff8fc;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
   margin: 25px 0;
 }
 
 .gallery img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 230px;
+  object-fit: contain;
   border-radius: 18px;
-  background: var(--soft);
+  background: white;
+  padding: 8px;
   box-shadow: 0 8px 22px rgba(214, 51, 132, 0.14);
+}
+
+footer {
+  text-align: center;
+  padding: 35px;
+  background: #fff8fc;
+}
+
+@media (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px 5%;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    width: 92%;
+    padding: 45px 0;
+  }
+
+  .profile-img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
