@@ -68,8 +68,10 @@ const translations = {
     project1Title:
       "Emigrant Register – Bachelor Project",
 
+      visitApplication: "🌍 Visit Live Application",
+
     project1Text:
-      "Bachelor project developed in collaboration with Slekt og Data Telemark. I contributed as Project Lead and Full Stack Developer.",
+      "Bachelor project developed in collaboration with Slekt og Data Telemark. I contributed as Project Lead and Full Stack Developer.The application is publicly available and allows useers to explore historical migration data from Telemark. ",
 
     project2Title:
       "Disc Golf Web Application",
@@ -299,11 +301,13 @@ const translations = {
     projectsSubtitle:
       "AKADEMISK · FULLSTACK · MOBIL · WEBUTVIKLING",
 
+      visitApplication: "🌍 Besøk applikasjonen",
+
     project1Title:
       "Emigrantregister – Bachelorprosjekt",
 
     project1Text:
-      "Bachelorprosjekt utviklet i samarbeid med Slekt og Data Telemark. Jeg bidro som prosjektleder og fullstack-utvikler.",
+      "Bachelorprosjekt utviklet i samarbeid med Slekt og Data Telemark. Jeg bidro som prosjektleder og fullstack-utvikler.Applikasjonen er offentlig tilgjengelig og lar brukere utforske historiske migrasjonsdata fra Telemark.",
 
     project2Title:
       "Diskgolf webapplikasjon",
