@@ -1,322 +1,46 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Monica Azaria Johansen | Portfolio</title>
-
-  <style>
-    :root {
-      --bg: #ffe6f2;
-      --card: #fff5fa;
-      --text: #2b1020;
-      --accent: #ff69b4;
-      --accent-dark: #d63384;
-      --soft: #f8b8d8;
-    }
-
-    body.dark {
-      --bg: #2b1020;
-      --card: #3d1830;
-      --text: #fff5fa;
-      --accent: #ff8ac8;
-      --accent-dark: #ff69b4;
-      --soft: #7a345c;
-    }
-
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      background: var(--card);
-      padding: 18px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
-      box-shadow: 0 4px 20px rgba(214, 51, 132, 0.15);
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      margin-left: 22px;
-      font-weight: bold;
-    }
-
-    .controls button {
-      border: none;
-      background: var(--accent);
-      color: white;
-      padding: 10px 13px;
-      border-radius: 50%;
-      cursor: pointer;
-      margin-left: 8px;
-      font-size: 16px;
-    }
-
-    header {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .hero {
-      max-width: 850px;
-    }
-
-    .profile-img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: var(--soft);
-      border: 6px solid var(--card);
-      box-shadow: 0 12px 35px rgba(214, 51, 132, 0.3);
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 25px;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--accent-dark);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    section {
-      padding: 70px 10%;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 28px;
-      padding: 30px;
-      margin-bottom: 28px;
-      box-shadow: 0 12px 35px rgba(214, 51, 132, 0.18);
-    }
-
-    .project-card img {
-      width: 100%;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      background: var(--soft);
-    }
-
-    .tags {
-      font-weight: bold;
-      color: var(--accent-dark);
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      margin-bottom: 15px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 10px 10px 0 0;
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: var(--card);
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav a {
-        margin: 0 8px;
-      }
-
-      h1 {
-        font-size: 2.4rem;
-      }
-
-      .profile-img {
-        width: 170px;
-        height: 170px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <audio id="music" loop>
-    <source src="" type="audio/mpeg" />
-  </audio>
-
   <nav>
-    <div><strong>Monica Azaria</strong></div>
-
+    <div class="logo">Monica Azaria 🌸</div>
     <div>
-      <a href="#home">Hjem</a>
-      <a href="#projects">Prosjekter</a>
-      <a href="#about">Om meg</a>
-      <a href="#contact">Kontakt</a>
-      <span class="controls">
-        <button onclick="toggleTheme()">🌙</button>
-        <button onclick="toggleMusic()">🔊</button>
-      </span>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="media.html">Media</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
-  <header id="home">
-    <div class="hero">
-      <img class="profile-img" src="https://github.com/monicaazaria.png" alt="Profilbilde av Monica" />
+  <main class="hero">
+    <img class="profile-img" src="https://github.com/monicaazaria.png" alt="Profile photo of Monica" />
 
-      <h1>Hei, jeg er Monica 🌸</h1>
+    <h1>Hi, I'm Monica 🌸</h1>
 
-      <p class="subtitle">Fullstack-utvikler | Bachelor i IT og informasjonssystemer</p>
+    <p class="subtitle">Full Stack Developer · Bachelor's Degree in IT and Information Systems</p>
 
-      <p>
-        Jeg bygger brukervennlige digitale løsninger med React, Node.js,
-        PostgreSQL og moderne webteknologi.
-      </p>
+    <p>
+      I build user-friendly digital solutions with React, Node.js,
+      PostgreSQL, databases and modern web technologies.
+    </p>
 
-      <div class="buttons">
-        <a href="https://github.com/monicaazaria">GitHub</a>
-        <a href="https://www.linkedin.com/in/monica-a-johansen/">LinkedIn</a>
-      </div>
+    <div>
+      <a class="button" href="projects.html">View Projects</a>
+      <a class="button" href="media.html">Media Coverage</a>
+      <a class="button" href="https://github.com/monicaazaria">GitHub</a>
+      <a class="button" href="https://www.linkedin.com/in/monica-a-johansen-7a49893b9/">LinkedIn</a>
     </div>
-  </header>
-
-  <section id="projects">
-    <h2>Prosjekter</h2>
-
-    <div class="card project-card">
-      <h3>Bachelorprosjekt – Slekt og Data Telemark</h3>
-      <p class="tags">React · Node.js · PostgreSQL · Docker · i18n</p>
-      <p>
-        Prosjektleder og utvikler for en webapplikasjon som gjør historiske
-        emigrantdata fra Øvre Telemark mer tilgjengelig gjennom søk,
-        filtrering og flerspråklig brukergrensesnitt.
-      </p>
-      <div class="buttons">
-        <a href="https://github.com/monicaazaria/BOP3000-Gruppe8">GitHub</a>
-      </div>
-    </div>
-
-    <div class="card project-card">
-      <h3>Emigrantregister</h3>
-      <p class="tags">PostgreSQL · Backend · API · Database</p>
-      <p>
-        Arbeid med database, backend, søkefunksjoner og strukturering av data
-        for historisk emigrantregister.
-      </p>
-      <div class="buttons">
-        <a href="https://github.com/monicaazaria/emigrantregister">GitHub</a>
-      </div>
-    </div>
-
-    <div class="card project-card">
-      <h3>Tegneprogram</h3>
-      <p class="tags">Java · JavaFX · Objektorientert programmering</p>
-      <p>
-        Tegneprogram utviklet i JavaFX med fokus på objektorientert
-        programmering, brukerinteraksjon og grafisk grensesnitt.
-      </p>
-      <div class="buttons">
-        <a href="https://github.com/monicaazaria/Tegneprogram">GitHub</a>
-      </div>
-    </div>
-
-    <div class="card project-card">
-      <h3>Diskgolf-prosjekt</h3>
-      <p class="tags">React · JavaScript · MongoDB · Node.js</p>
-      <p>
-        Webapplikasjon utviklet som gruppeprosjekt for discgolf, med baner,
-        brukerstøtte og datalagring.
-      </p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>Om meg</h2>
-
-    <div class="card">
-      <p>
-        Jeg har nylig fullført bachelorgrad i IT og informasjonssystemer ved
-        Universitetet i Sørøst-Norge. Jeg har erfaring med frontend, backend,
-        databaser, API-utvikling og prosjektledelse.
-      </p>
-
-      <p>
-        Gjennom bachelorprosjektet mitt samarbeidet jeg med Slekt og Data
-        Telemark som prosjektleder og utvikler. Prosjektet ble omtalt av blant
-        annet USN, Slekt og Data, Telemarksavisa og Vest-Telemark Blad.
-      </p>
-
-      <p>
-        Før IT-utdanningen har jeg hatt internasjonal erfaring og arbeidserfaring
-        fra kundeservice, administrasjon og tolking. Det har gitt meg sterk
-        kommunikasjonsevne, struktur og evne til å tilpasse meg nye miljøer.
-      </p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Kontakt</h2>
-
-    <div class="card">
-      <p>Ta gjerne kontakt med meg via LinkedIn eller GitHub.</p>
-
-      <div class="buttons">
-        <a href="https://github.com/monicaazaria">GitHub</a>
-        <a href="https://www.linkedin.com/in/monica-a-johansen/">LinkedIn</a>
-      </div>
-    </div>
-  </section>
+  </main>
 
   <footer>
-    <p>Laget av Monica Azaria Johansen 🌸</p>
+    <p>© 2026 Monica Azaria Johansen</p>
   </footer>
-
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark");
-    }
-
-    function toggleMusic() {
-      const music = document.getElementById("music");
-      if (music.paused) {
-        music.play();
-      } else {
-        music.pause();
-      }
-    }
-  </script>
 </body>
 </html>
