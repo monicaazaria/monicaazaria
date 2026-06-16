@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Monica Azaria Johansen | Portfolio</title>
@@ -14,186 +13,104 @@
 <body>
 
   <nav>
-
-    <div class="logo">
-
-      Monica Azaria Johansen 🌸
-
-    </div>
+    <div class="logo">Monica Azaria Johansen 🌸</div>
 
     <div>
+      <a href="index.html" data-translate="home">Home</a>
+      <a href="projects.html" data-translate="projects">Projects</a>
+      <a href="media.html" data-translate="media">Media</a>
+      <a href="about.html" data-translate="about">About</a>
+      <a href="contact.html" data-translate="contact">Contact</a>
 
-     <a href="index.html" data-translate="home">Home</a>
-
-<a href="projects.html" data-translate="projects">Projects</a>
-
-<a href="media.html" data-translate="media">Media</a>
-
-<a href="about.html" data-translate="about">About</a>
-
-<a href="contact.html" data-translate="contact">Contact</a>
       <span class="nav-actions">
+        <button class="theme-btn" onclick="toggleTheme()">🌙</button>
 
-      <button class="theme-btn" onclick="toggleTheme()">
-
-🌙
-
-</button>
-
-      <button class="language-btn" onclick="toggleLanguage()">
-  🇳🇴 NO | 🇬🇧 EN
-</button>
-
-    </span>
-
+        <button class="language-btn" onclick="toggleLanguage()">
+          🇳🇴 NO | 🇬🇧 EN
+        </button>
+      </span>
     </div>
-
   </nav>
-
-
 
   <main class="hero">
 
     <img
-
       class="profile-img"
-
       src="images/profilepicure.jpeg"
-
       alt="Profile photo of Monica"
-
     />
 
+    <h1 data-translate="heroTitle">Hi World, I'm Monica 🌸</h1>
 
-
-    <h1>Hi World, I'm Monica 🌸</h1>
-
-
-
-    <p class="subtitle">
-
+    <p class="subtitle" data-translate="heroSubtitle">
       FULL STACK DEVELOPER · PROJECT LEAD · BACHELOR'S DEGREE IN IT AND INFORMATION SYSTEMS
-
     </p>
 
-
-
-    <p>
-
-      I build accessible and user-friendly digital solutions using
-
-      React, Node.js, PostgreSQL and modern web technologies.
-
+    <p data-translate="heroText1">
+      I build accessible and user-friendly digital solutions using React, Node.js,
+      PostgreSQL and modern web technologies.
     </p>
 
-
-
-    <p>
-
-      I recently completed my Bachelor's degree at the University of
-
-      South-Eastern Norway and enjoy creating solutions that combine
-
-      technology, usability and design.
-
+    <p data-translate="heroText2">
+      I recently completed my Bachelor's degree at the University of South-Eastern
+      Norway and enjoy creating solutions that combine technology, usability and design.
     </p>
-
-
 
     <div class="highlights">
-
-      <span>🇳🇴 Based in Norway</span>
-
-      <span>🌍 4 languages</span>
-
-      <span>💻 Full Stack Developer</span>
-
-      <span>🎓 USN Graduate 2026</span>
-
-      <span>👩🏻‍💼 Project Lead</span>
-
-      <span>🎨 Creative Background</span>
-
+      <span data-translate="highlightNorway">🇳🇴 Based in Norway</span>
+      <span data-translate="highlightLanguages">🌍 4 languages</span>
+      <span data-translate="highlightFullStack">💻 Full Stack Developer</span>
+      <span data-translate="highlightGraduate">🎓 USN Graduate 2026</span>
+      <span data-translate="highlightProjectLead">👩🏻‍💼 Project Leader</span>
+      <span data-translate="highlightCreative">🎨 Creative Background</span>
     </div>
 
-
     <div class="card">
-  <h3>💼 Open to Work</h3>
-  <p>I am currently looking for opportunities within:</p>
+      <h3 data-translate="openToWorkTitle">💼 Open to Work</h3>
 
-  <ul>
-    <li>Junior Full Stack Developer</li>
-    <li>Junior Frontend Developer</li>
-    <li>Junior Backend Developer</li>
-    <li>Web Development</li>
-  </ul>
-</div>
+      <p data-translate="openToWorkText">
+        I am currently looking for opportunities within:
+      </p>
 
-
+      <ul>
+        <li data-translate="openRole1">Junior Full Stack Developer</li>
+        <li data-translate="openRole2">Junior Frontend Developer</li>
+        <li data-translate="openRole3">Junior Backend Developer</li>
+        <li data-translate="openRole4">Web Development</li>
+      </ul>
+    </div>
 
     <div class="buttons">
-
-      <a class="button" href="projects.html">
-
+      <a class="button" href="projects.html" data-translate="viewProjects">
         View Projects
-
       </a>
 
-
-
-      <a class="button" href="media.html">
-
+      <a class="button" href="media.html" data-translate="mediaCoverage">
         Media Coverage
-
       </a>
 
-
-
-      <a
-
-        class="button"
-
-        href="https://github.com/monicaazaria"
-
-        target="_blank"
-
-      >
-
+      <a class="button" href="https://github.com/monicaazaria" target="_blank">
         GitHub
-
       </a>
-
-
 
       <a
-
         class="button"
-
         href="https://www.linkedin.com/in/monica-a-johansen-7a49893b9/"
-
         target="_blank"
-
       >
-
         LinkedIn
-
       </a>
-
     </div>
 
   </main>
 
-
-
   <footer>
-
-    <p>© 2026 Monica Azaria Johansen</p>
-
+    <p>© 2026 Monica Azaria Johansen 🌸</p>
+    <p data-translate="footerBuilt">Built with HTML, CSS and GitHub Pages</p>
   </footer>
 
-<script src="translations.js"></script>
-
-<script src="script.js"></script>
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
 
 </body>
 

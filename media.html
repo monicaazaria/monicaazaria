@@ -2,225 +2,150 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media | Monica Azaria Johansen</title>
 
-<title>Media | Monica Azaria Johansen</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
+  <div class="logo">
+    Monica Azaria Johansen 🌸
+  </div>
 
-<div class="logo">
+  <div>
+    <a href="index.html" data-translate="home">Home</a>
 
-Monica Azaria Johansen 🌸
+    <a href="projects.html" data-translate="projects">Projects</a>
 
-</div>
+    <a href="media.html" data-translate="media">Media</a>
 
-<div>
+    <a href="about.html" data-translate="about">About</a>
 
-<a href="index.html" data-translate="home">Home</a>
+    <a href="contact.html" data-translate="contact">Contact</a>
 
-<a href="projects.html" data-translate="projects">Projects</a>
+    <span class="nav-actions">
+      <button class="theme-btn" onclick="toggleTheme()">
+        🌙
+      </button>
 
-<a href="media.html" data-translate="media">Media</a>
-
-<a href="about.html" data-translate="about">About</a>
-
-<a href="contact.html" data-translate="contact">Contact</a>
-
-<span class="nav-actions">
-
-<button class="theme-btn" onclick="toggleTheme()">
-
-🌙
-
-</button>
-
-<button class="language-btn" onclick="toggleLanguage()">
-  🇳🇴 NO | 🇬🇧 EN
-</button>
-
-</span>
-
-</div>
-
+      <button class="language-btn" onclick="toggleLanguage()">
+        🇳🇴 NO | 🇬🇧 EN
+      </button>
+    </span>
+  </div>
 </nav>
 
 <main>
 
-<h1>Featured In</h1>
-
-<p class="subtitle">
-
-NEWS · ARTICLES · UNIVERSITY FEATURES
-
-</p>
-
-
-<div class="media-grid">
-
-
-<a
-
-href="https://www.ta.no/it-studenter-gjor-det-endelig-mulig-a-soke-opp-dine-amerikanske-slektninger/s/5-50-2351641"
-
-target="_blank"
-
-class="project-card"
-
->
-
-<img
-
-src="images/media/ta.png"
-
-alt="Telemarksavisa article"
-
-/>
-
-<h3>Telemarksavisa</h3>
-
-<p class="tags">
-
-NEWSPAPER ARTICLE
-
-</p>
-
-<p>
-
-Our bachelor project was featured in Telemarksavisa and highlighted the collaboration with Slekt og Data Telemark.
-
-</p>
-
-</a>
-
-
-<a
-
-href="https://www.usn.no/om-usn/organisering/fakultet/usn-handelshogskolen/nyhende-fra-fakultetet/bachelorprosjekt-studenter-har-laget-ny-og-sokbar-emigrantdatabase"
-
-target="_blank"
-
-class="project-card"
-
->
-
-<img
-
-src="images/media/usn.png"
-
-alt="USN article"
-
-/>
-
-<h3>University of South-Eastern Norway</h3>
-
-<p class="tags">
-
-UNIVERSITY FEATURE
-
-</p>
-
-<p>
-
-USN featured our bachelor project and the searchable Emigrant Register.
-
-</p>
-
-</a>
-
-
-<a
-
-href="https://slektogdata.no/nb/ny-emigrantdatabase-fra-telemark"
-
-target="_blank"
-
-class="project-card"
-
->
-
-<img
-
-src="images/media/slektogdata.png"
-
-alt="Slekt og Data article"
-
-/>
-
-<h3>Slekt og Data</h3>
-
-<p class="tags">
-
-ORGANIZATION FEATURE
-
-</p>
-
-<p>
-
-Official article about the new searchable Emigrant Register.
-
-</p>
-
-</a>
-
-
-<a
-
-href="https://www.vtb.no/nyhende/fire-manadar-i-fortida/640660"
-
-target="_blank"
-
-class="project-card"
-
->
-
-<img
-
-src="images/media/vtb.png"
-
-alt="Vest-Telemark Blad article"
-
-/>
-
-<h3>Vest-Telemark Blad</h3>
-
-<p class="tags">
-
-NEWSPAPER ARTICLE
-
-</p>
-
-<p>
-
-Coverage of the bachelor project and our work in Rauland.
-
-</p>
-
-</a>
-
-</div>
+  <h1 data-translate="featuredIn">Featured In</h1>
+
+  <p class="subtitle" data-translate="mediaSubtitle">
+    NEWS · ARTICLES · UNIVERSITY FEATURES
+  </p>
+
+  <div class="media-grid">
+
+    <a
+      href="https://www.ta.no/it-studenter-gjor-det-endelig-mulig-a-soke-opp-dine-amerikanske-slektninger/s/5-50-2351641"
+      target="_blank"
+      class="project-card"
+    >
+      <img
+        src="images/media/ta.png"
+        alt="Telemarksavisa article"
+      />
+
+      <h3 data-translate="media1Title">Telemarksavisa</h3>
+
+      <p class="tags" data-translate="media1Tag">
+        NEWSPAPER ARTICLE
+      </p>
+
+      <p data-translate="media1Text">
+        Our bachelor project was featured in Telemarksavisa and highlighted the collaboration with Slekt og Data Telemark.
+      </p>
+    </a>
+
+    <a
+      href="https://www.usn.no/om-usn/organisering/fakultet/usn-handelshogskolen/nyhende-fra-fakultetet/bachelorprosjekt-studenter-har-laget-ny-og-sokbar-emigrantdatabase"
+      target="_blank"
+      class="project-card"
+    >
+      <img
+        src="images/media/usn.png"
+        alt="USN article"
+      />
+
+      <h3 data-translate="media2Title">University of South-Eastern Norway</h3>
+
+      <p class="tags" data-translate="media2Tag">
+        UNIVERSITY FEATURE
+      </p>
+
+      <p data-translate="media2Text">
+        USN featured our bachelor project and the searchable Emigrant Register.
+      </p>
+    </a>
+
+    <a
+      href="https://slektogdata.no/nb/ny-emigrantdatabase-fra-telemark"
+      target="_blank"
+      class="project-card"
+    >
+      <img
+        src="images/media/slektogdata.png"
+        alt="Slekt og Data article"
+      />
+
+      <h3 data-translate="media3Title">Slekt og Data</h3>
+
+      <p class="tags" data-translate="media3Tag">
+        ORGANIZATION FEATURE
+      </p>
+
+      <p data-translate="media3Text">
+        Official article about the new searchable Emigrant Register.
+      </p>
+    </a>
+
+    <a
+      href="https://www.vtb.no/nyhende/fire-manadar-i-fortida/640660"
+      target="_blank"
+      class="project-card"
+    >
+      <img
+        src="images/media/vtb.png"
+        alt="Vest-Telemark Blad article"
+      />
+
+      <h3 data-translate="media4Title">Vest-Telemark Blad</h3>
+
+      <p class="tags" data-translate="media4Tag">
+        NEWSPAPER ARTICLE
+      </p>
+
+      <p data-translate="media4Text">
+        Coverage of the bachelor project and our work in Rauland.
+      </p>
+    </a>
+
+  </div>
 
 </main>
 
-
 <footer>
+  <p>© 2026 Monica Azaria Johansen 🌸</p>
 
-© 2026 Monica Azaria Johansen 🌸
-
-<br>
-
-Built with HTML, CSS and GitHub Pages
-
+  <p data-translate="footerBuilt">
+    Built with HTML, CSS and GitHub Pages
+  </p>
 </footer>
-
 
 <script src="translations.js"></script>
 
