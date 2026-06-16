@@ -13,3 +13,11 @@ const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
   document.body.classList.add("dark");
 }
+
+function toggleLanguage() {
+  const currentLang = localStorage.getItem("language") || "en";
+  const newLang = currentLang === "en" ? "no" : "en";
+
+  localStorage.setItem("language", newLang);
+  location.reload();
+}
